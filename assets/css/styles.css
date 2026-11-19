@@ -216,3 +216,81 @@
   .home-lab-full{font-size:18px}
   .home-lab-institute{font-size:13px}
 }
+
+
+/* Homepage identity banner: full-width stacked layout prevents text overlap while retaining large type. */
+.home-lab-identity{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  width:100%;
+  max-width:none;
+  min-width:0;
+  gap:10px;
+  margin:0 0 38px;
+  padding:30px 36px 31px;
+  border:1px solid rgba(217,195,157,.5);
+  border-left:7px solid var(--sand-deep);
+  border-radius:0 20px 20px 0;
+  background:linear-gradient(112deg,#102746 0%,#18385f 100%);
+  box-shadow:0 16px 38px rgba(16,39,70,.13);
+}
+.home-lab-acronym{
+  display:block;
+  max-width:100%;
+  color:#fffefa;
+  font-family:'Manrope',sans-serif;
+  font-size:clamp(44px,4.5vw,58px);
+  font-weight:800;
+  line-height:1.05;
+  letter-spacing:.015em;
+  white-space:normal;
+  overflow-wrap:break-word;
+}
+.home-lab-details{
+  display:block;
+  width:100%;
+  min-width:0;
+  border:0;
+  border-top:1px solid rgba(255,255,255,.24);
+  margin:0;
+  padding:14px 0 0;
+}
+.home-lab-full{
+  display:block;
+  max-width:1000px;
+  color:#f3e7d2;
+  font-family:'Manrope',sans-serif;
+  font-size:clamp(22px,2.2vw,28px);
+  font-weight:750;
+  line-height:1.28;
+  letter-spacing:-.025em;
+  overflow-wrap:normal;
+}
+.home-lab-institute{
+  display:block;
+  margin-top:8px;
+  color:#d4dfeb;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.4;
+  letter-spacing:.055em;
+}
+@media(max-width:900px){
+  .home-lab-identity{padding:26px 28px 27px;margin-bottom:30px}
+  .home-lab-acronym{font-size:48px}
+  .home-lab-full{font-size:24px}
+}
+@media(max-width:760px){
+  .home-lab-identity{padding:24px 23px 25px;margin-bottom:26px}
+  .home-lab-acronym{font-size:44px}
+  .home-lab-full{font-size:23px}
+  .home-lab-institute{font-size:15px}
+}
+@media(max-width:430px){
+  .home-lab-identity{padding:20px 18px 21px;border-left-width:5px}
+  .home-lab-acronym{font-size:40px}
+  .home-lab-full{font-size:21px}
+  .home-lab-institute{font-size:14px;letter-spacing:.035em}
+}
