@@ -378,3 +378,13 @@ main#main > .sies-hero > .container > .home-lab-identity .home-lab-institute {
     letter-spacing: .035em !important;
   }
 }
+
+
+/* Google Scholar callout and expanded publication filters */
+.scholar-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 27px;margin:0 0 25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(110deg,#f4efe5,#eef2f5)}
+.scholar-panel h2{font-size:clamp(22px,2.5vw,29px);margin:8px 0 6px}
+.scholar-panel p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.scholar-button{white-space:nowrap;flex:0 0 auto}
+.pub-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pub-filter{min-width:220px;max-width:100%}
+@media(max-width:700px){.scholar-panel{align-items:flex-start;flex-direction:column;padding:21px}.scholar-button{white-space:normal}.pub-filter{min-width:0;width:100%}}
