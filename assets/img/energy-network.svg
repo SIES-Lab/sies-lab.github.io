@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Connected sustainable energy system</title><desc id="desc">Illustration of renewable generation, an electric vehicle, a battery and a connected power grid.</desc>
+<defs>
+ <linearGradient id="panel" x1="65" y1="60" x2="688" y2="534" gradientUnits="userSpaceOnUse"><stop stop-color="#F8F4EC"/><stop offset="1" stop-color="#E9E2D5"/></linearGradient>
+ <linearGradient id="blue" x1="120" y1="100" x2="600" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#315F94"/><stop offset="1" stop-color="#102746"/></linearGradient>
+ <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9C39D"/><stop offset="1" stop-color="#B89A6C"/></linearGradient>
+ <filter id="shadow" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#182A40" flood-opacity=".10"/></filter>
+</defs>
+<rect x="24" y="22" width="712" height="556" rx="34" fill="url(#panel)"/>
+<path d="M105 300H650M380 100V495" stroke="#B8B4AC" stroke-width="2" stroke-dasharray="5 9"/>
+<path d="M160 300C160 206 256 145 380 145S600 206 600 300 504 455 380 455 160 394 160 300Z" stroke="#CFC5B4" stroke-width="2" stroke-dasharray="4 10"/>
+<!-- solar -->
+<g filter="url(#shadow)"><rect x="62" y="64" width="198" height="146" rx="22" fill="#fff"/><path d="M93 107H229L211 174H75L93 107Z" fill="#193B64"/><path d="M116 107L103 174M160 107L153 174M204 107L199 174M84 140H220" stroke="#E9E2D5" stroke-width="4"/><path d="M150 175V191M122 192H178" stroke="#193B64" stroke-width="7" stroke-linecap="round"/><circle cx="220" cy="84" r="15" fill="#D5A85C"/></g>
+<!-- wind -->
+<g transform="translate(505 54)" stroke="#426C5A" stroke-width="7" stroke-linecap="round"><path d="M48 82V177M48 82L25 21M48 82L107 74M48 82L13 123"/><circle cx="48" cy="82" r="7" fill="#426C5A" stroke="none"/><path d="M126 116V187M126 116L108 59M126 116L179 106M126 116L91 150"/><circle cx="126" cy="116" r="6" fill="#426C5A" stroke="none"/></g>
+<!-- battery -->
+<g filter="url(#shadow)"><rect x="63" y="390" width="202" height="132" rx="22" fill="#fff"/><rect x="84" y="421" width="158" height="70" rx="11" fill="#E9F0E9" stroke="#47705D" stroke-width="3"/><rect x="139" y="405" width="48" height="15" rx="5" fill="#47705D"/><path d="M161 433L139 464H157L150 484L185 451H166L174 433H161Z" fill="#47705D"/><path d="M105 503H224" stroke="#D9C39D" stroke-width="5" stroke-linecap="round"/></g>
+<!-- EV -->
+<g filter="url(#shadow)"><rect x="487" y="375" width="212" height="148" rx="22" fill="#fff"/><path d="M520 450L535 416C540 403 550 395 567 395H629C642 395 651 402 657 414L673 450V477H520V450Z" fill="url(#blue)"/><path d="M553 415H625L641 445H539L553 415Z" fill="#DCE5EA"/><path d="M594 416V444" stroke="#315F94" stroke-width="4"/><circle cx="554" cy="475" r="16" fill="#182C45"/><circle cx="642" cy="475" r="16" fill="#182C45"/><circle cx="554" cy="475" r="6" fill="#E9E2D5"/><circle cx="642" cy="475" r="6" fill="#E9E2D5"/><path d="M571 459H617" stroke="#E9E2D5" stroke-width="4" stroke-linecap="round"/></g>
+<!-- center hub -->
+<g filter="url(#shadow)"><circle cx="380" cy="300" r="87" fill="#fff"/><circle cx="380" cy="300" r="68" fill="url(#blue)"/><path d="M380 251L353 309H378L365 350L410 289H384L397 251H380Z" fill="#F5EBDD"/><circle cx="380" cy="300" r="86" stroke="#D4BD96" stroke-width="3"/></g>
+<!-- connection lines -->
+<g stroke="#B89A6C" stroke-width="3" stroke-linecap="round"><path d="M260 160L314 242"/><path d="M505 154L446 241"/><path d="M265 445L315 358"/><path d="M487 445L445 359"/></g>
+<g fill="#B89A6C"><circle cx="260" cy="160" r="6"/><circle cx="505" cy="154" r="6"/><circle cx="265" cy="445" r="6"/><circle cx="487" cy="445" r="6"/></g>
+<g font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#536174"><text x="78" y="238">SOLAR</text><text x="533" y="250">WIND</text><text x="83" y="550">STORAGE</text><text x="536" y="550">E-MOBILITY</text></g>
+</svg>
