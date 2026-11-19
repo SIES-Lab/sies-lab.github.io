@@ -149,3 +149,70 @@
 .join-card .text-link{font-size:14px;white-space:normal;margin-top:10px}
 @media(max-width:1000px){.nav a{font-size:16px}.openings-grid{grid-template-columns:1fr}.openings-heading{align-items:flex-start;flex-direction:column}}
 @media(max-width:760px){.nav a{font-size:16px}.home-lab-identity{margin-bottom:18px;padding:13px 15px}.home-lab-full{font-size:15px}.home-lab-institute{font-size:12px}.openings-section{padding:48px 0}.opening-card{padding:23px 21px}.opening-card h3{font-size:24px}.opening-areas li{font-size:14px}}
+
+
+/* Prominent SIES identity banner at the top of the homepage */
+.home-lab-identity{
+  display:grid;
+  grid-template-columns:minmax(245px,.62fr) minmax(0,1.38fr);
+  align-items:center;
+  gap:28px;
+  margin:0 0 38px;
+  padding:25px 30px 26px;
+  border:1px solid rgba(217,195,157,.5);
+  border-left:7px solid var(--sand-deep);
+  border-radius:0 20px 20px 0;
+  background:linear-gradient(112deg,#102746 0%,#18385f 100%);
+  box-shadow:0 16px 38px rgba(16,39,70,.13);
+}
+.home-lab-acronym{
+  display:block;
+  color:#fffefa;
+  font-family:'Manrope',sans-serif;
+  font-size:clamp(36px,4.3vw,54px);
+  font-weight:800;
+  line-height:1.04;
+  letter-spacing:.015em;
+}
+.home-lab-details{min-width:0;border-left:1px solid rgba(255,255,255,.24);padding-left:28px}
+.home-lab-full{
+  display:block;
+  color:#f3e7d2;
+  font-family:'Manrope',sans-serif;
+  font-size:clamp(19px,2.15vw,27px);
+  font-weight:750;
+  line-height:1.28;
+  letter-spacing:-.025em;
+}
+.home-lab-institute{
+  display:block;
+  margin-top:8px;
+  color:#d4dfeb;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.4;
+  letter-spacing:.055em;
+}
+.sies-hero-grid{position:relative;display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:34px}
+.sies-hero-copy{min-width:0}
+.sies-hero-copy>.eyebrow{font-size:12px;letter-spacing:.14em}
+@media(max-width:900px){
+  .home-lab-identity{grid-template-columns:1fr;gap:12px;padding:23px 24px;margin-bottom:30px}
+  .home-lab-details{border-left:0;border-top:1px solid rgba(255,255,255,.24);padding:13px 0 0}
+  .home-lab-acronym{font-size:clamp(34px,6vw,48px)}
+  .home-lab-full{font-size:clamp(19px,3vw,24px)}
+  .sies-hero-grid{grid-template-columns:1fr 1fr;gap:25px}
+}
+@media(max-width:760px){
+  .home-lab-identity{margin-bottom:25px;padding:20px 21px}
+  .home-lab-acronym{font-size:36px}
+  .home-lab-full{font-size:20px}
+  .home-lab-institute{font-size:14px}
+  .sies-hero-grid{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:430px){
+  .home-lab-identity{padding:18px 17px;border-left-width:5px}
+  .home-lab-acronym{font-size:32px}
+  .home-lab-full{font-size:18px}
+  .home-lab-institute{font-size:13px}
+}

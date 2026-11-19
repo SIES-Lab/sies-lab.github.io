@@ -1,0 +1,1 @@
+Upload index.html to repository root and replace the existing file. Upload styles.css to assets/css/ and replace the existing file. Commit both files to main. This keeps all other website pages and image assets unchanged.
