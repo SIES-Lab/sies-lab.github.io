@@ -111,3 +111,41 @@
 @media(max-width:1080px){.sies-hero-grid{grid-template-columns:.9fr 1.1fr;gap:24px}}
 @media(max-width:760px){.sies-hero-grid{grid-template-columns:1fr}.sies-hero-art{max-width:720px;margin:0 auto}.sies-hero-art img{aspect-ratio:16/9;object-fit:contain}.hero-caption{font-size:13px}}
 @media(max-width:430px){.hero-caption{font-size:12px;line-height:1.55}}
+
+
+/* Recruitment announcement and stronger SIES identity */
+.nav{gap:22px}
+.nav a{font-size:16px;font-weight:750}
+.home-lab-identity{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin:0 0 22px;padding:16px 19px 15px;border-left:4px solid var(--sand-deep);border-radius:0 14px 14px 0;background:linear-gradient(100deg,rgba(255,255,255,.86),rgba(255,255,255,.38));box-shadow:0 8px 26px rgba(16,39,70,.045);max-width:620px}
+.home-lab-acronym{font:800 clamp(25px,3vw,38px)/1.08 'Manrope',sans-serif;letter-spacing:.025em;color:var(--navy)}
+.home-lab-full{font:700 clamp(14px,1.45vw,18px)/1.4 'Manrope',sans-serif;color:var(--blue)}
+.home-lab-institute{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#68778a}
+.openings-section{padding:64px 0 70px;background:linear-gradient(135deg,#f3eee4 0%,#fffefa 55%,#edf2f5 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.openings-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:26px}
+.openings-kicker{display:inline-block;color:var(--blue);font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+.openings-heading h2{font-size:clamp(34px,4vw,48px);margin:9px 0 8px}
+.openings-heading p{margin:0;color:var(--muted);font-size:16px;max-width:700px}
+.openings-live{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;padding:10px 15px;border:1px solid #c6d9cb;background:#eef7ef;color:#285a3b;border-radius:999px;font-size:13px;font-weight:800}
+.openings-live i{width:9px;height:9px;border-radius:50%;background:#3c9a5b;box-shadow:0 0 0 4px rgba(60,154,91,.13)}
+.openings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.opening-card{position:relative;padding:28px 30px 26px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.94);box-shadow:0 14px 38px rgba(16,39,70,.065)}
+.opening-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.opening-type{font-size:12px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.opening-count{display:flex;align-items:baseline;gap:6px;padding:7px 12px;border-radius:12px;background:var(--navy);color:white;font:800 27px/1 'Manrope',sans-serif}
+.opening-count small{font:800 9px/1 'DM Sans',sans-serif;letter-spacing:.12em;color:#d9c39d}
+.opening-card h3{font-size:27px;margin:18px 0 7px}
+.opening-mode{display:inline-block!important;margin:0 0 13px!important;padding:6px 10px;border-radius:8px;background:#f2eee5;color:var(--navy)!important;font-size:13px!important;font-weight:800}
+.opening-card>p:not(.opening-mode){font-size:15px;line-height:1.65;color:var(--muted);margin:0 0 10px}
+.opening-areas{display:grid;gap:8px;margin:15px 0 22px;padding:0;list-style:none}
+.opening-areas li{position:relative;padding-left:22px;color:#4f5e70;font-size:14px;line-height:1.55}
+.opening-areas li:before{content:'✓';position:absolute;left:0;top:0;color:var(--green);font-weight:900}
+.opening-cta{display:inline-flex;align-items:center;gap:10px;padding:12px 17px;border-radius:999px;background:var(--navy);color:white;font-size:14px;font-weight:800}
+.opening-cta:hover{background:var(--blue);color:white;text-decoration:none}
+.opening-cta span{font-size:17px}
+.openings-note{margin:18px 0 0;color:#657285;font-size:13px;line-height:1.65}
+.join-card{padding:28px 27px}
+.join-card h3{font-size:21px}
+.join-card p{font-size:15px;line-height:1.7}
+.join-card .text-link{font-size:14px;white-space:normal;margin-top:10px}
+@media(max-width:1000px){.nav a{font-size:16px}.openings-grid{grid-template-columns:1fr}.openings-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:760px){.nav a{font-size:16px}.home-lab-identity{margin-bottom:18px;padding:13px 15px}.home-lab-full{font-size:15px}.home-lab-institute{font-size:12px}.openings-section{padding:48px 0}.opening-card{padding:23px 21px}.opening-card h3{font-size:24px}.opening-areas li{font-size:14px}}
