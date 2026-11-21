@@ -96,15 +96,20 @@ const preferredOrder = [
     'Minimalistic Terminal Editor'
 ];
 
+
+const normalizeTitle = (title) =>
+    title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
 const getPriority = (title) => {
-    const normalizedTitle = title.toLowerCase();
+    const normalizedTitle = normalizeTitle(title);
 
     const index = preferredOrder.findIndex(prefix =>
-        normalizedTitle.includes(prefix.toLowerCase())
+        normalizedTitle.includes(normalizeTitle(prefix))
     );
 
     return index === -1 ? preferredOrder.length : index;
 };
+
 
 filtered.sort((a, b) =>
     (b.year - a.year) ||
