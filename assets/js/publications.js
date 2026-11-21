@@ -90,23 +90,26 @@ if (list) {
     });
 
 const preferredOrder = [
-  'A Smart Charging Strategy',
-  'Multiagent-Multilevel Coordination',
-  'Abstract Syntax Tree',
-  'Minimalistic Terminal Editor'
+    'A Smart Charging Strategy',
+    'Multiagent-Multilevel Coordination',
+    'Abstract Syntax Tree',
+    'Minimalistic Terminal Editor'
 ];
 
 const getPriority = (title) => {
-  const index = preferredOrder.findIndex(prefix =>
-    title.startsWith(prefix)
-  );
-  return index === -1 ? preferredOrder.length : index;
+    const normalizedTitle = title.toLowerCase();
+
+    const index = preferredOrder.findIndex(prefix =>
+        normalizedTitle.includes(prefix.toLowerCase())
+    );
+
+    return index === -1 ? preferredOrder.length : index;
 };
 
 filtered.sort((a, b) =>
-  b.year - a.year ||
-  getPriority(a.title) - getPriority(b.title) ||
-  a.title.localeCompare(b.title)
+    (b.year - a.year) ||
+    (getPriority(a.title) - getPriority(b.title)) ||
+    a.title.localeCompare(b.title)
 );
     count.textContent = `${filtered.length} ${filtered.length === 1 ? 'publication' : 'publications'} shown`;
     if (!filtered.length) {
