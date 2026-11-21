@@ -87,7 +87,27 @@ if (list) {
     const filtered = publications.filter(p => {
       const haystack = `${p.title} ${p.authors} ${p.venue} ${p.area} ${p.year}`.toLowerCase();
       return (!q || haystack.includes(q)) && (area.value === 'all' || p.area === area.value) && (type.value === 'all' || p.type === type.value);
-    }).sort((a,b) => b.year-a.year || a.title.localeCompare(b.title));
+    });
+
+const preferredOrder = [
+  'A Smart Charging Strategy',
+  'Multiagent-Multilevel Coordination',
+  'Abstract Syntax Tree',
+  'Minimalistic Terminal Editor'
+];
+
+const getPriority = (title) => {
+  const index = preferredOrder.findIndex(prefix =>
+    title.startsWith(prefix)
+  );
+  return index === -1 ? preferredOrder.length : index;
+};
+
+filtered.sort((a, b) =>
+  b.year - a.year ||
+  getPriority(a.title) - getPriority(b.title) ||
+  a.title.localeCompare(b.title)
+);
     count.textContent = `${filtered.length} ${filtered.length === 1 ? 'publication' : 'publications'} shown`;
     if (!filtered.length) {
       list.innerHTML = '<div class="empty-state">No publications match those filters. Try a different keyword or topic.</div>';
